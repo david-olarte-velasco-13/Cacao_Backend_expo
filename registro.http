@@ -1,0 +1,28 @@
+### todos los registros
+
+GET http://localhost:4000/registro
+
+### solo uno
+
+GET http://localhost:4000/registro/630112ccdc8fb16ec4a2ca39
+
+### create
+
+POST http://localhost:4000/registro
+Content-Type: application/json
+
+{
+    "Nombre": "Gilberto",
+    "Documento": "110345",
+    "nFinca": "uberrimo",
+    "Ubicacion": "colombia",
+    "tCultivo": "600",
+    "clonCacao": "tcs01"
+}
+
+
+### delete
+DELETE http://localhost:4000/registro/630112ccdc8fb16ec4a2ca39
+
+### update
+PUT http://localhost:4000/registro/1
