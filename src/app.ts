@@ -7,7 +7,7 @@ import registroRoutes from './routes/registro.routes';
 
 const app = express()
 
-app.set('port', config.PORT);
+app.set('port', config.PORT || 4000);
 
 app.use(morgan('dev'));
 
